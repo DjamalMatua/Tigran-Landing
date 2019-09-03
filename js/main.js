@@ -2,7 +2,7 @@
 var $page = $('html, body');
 $('a[href*="#"]').click(function() {
     $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top + (-30)
+        scrollTop: $($.attr(this, 'href')).offset().top + (-20)
     }, 600);
     return false;
 });
