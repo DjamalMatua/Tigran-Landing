@@ -904,9 +904,10 @@ body{
         justify-content: center;
         align-items: center;
         overflow: hidden!important;
+
         &:hover{
             .work-project-info {
-	            display: block;
+	            opacity: 1;
 }
         }
         img{
@@ -922,7 +923,8 @@ body{
             max-height: 300px;
             width: 100%;
             background-color: @blue-color;
-            display: none;
+            opacity: 0;
+            transition: 0.5s;
             a{
                .quicksand;
                 font-size: 16px;
