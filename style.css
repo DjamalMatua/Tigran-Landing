@@ -756,6 +756,7 @@ body {
   border-radius: 50%;
   position: relative;
   box-shadow: 0 0 0 5px #f2f3f7;
+  margin-left: 0.5%;
   float: left;
 }
 .time-line-section .timeline-item .time-line-icon i {
