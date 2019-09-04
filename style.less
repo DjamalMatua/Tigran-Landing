@@ -8,7 +8,7 @@ body{
 @import url(font/stylesheet.css);
 
 .play-fair{
-    font-family: 'Playfair Display';
+   font-family: 'Minimal';
     font-style: normal;
 }
 
@@ -43,7 +43,6 @@ body{
 }
 }
 
-
 /***SIDEBAR***/
 .side-bar {
 	padding-top: 50px;
@@ -69,8 +68,8 @@ body{
     .name{
         display: block;
         .play-fair;
-        font-weight: 700;
-        font-size: 22px;
+        font-weight: 400;
+        font-size: 30px;
         color: @text-color;
         text-decoration: none;
         cursor: default; 
@@ -85,6 +84,7 @@ body{
     }
     .copyright {
 	    text-transform: capitalize;
+        margin: 0;
 }
     ul{
         list-style: none;
@@ -198,12 +198,12 @@ body{
          vertical-align: middle;
          height: 100vh;
          padding-left: 10%;
-         padding-top: 30%;
+         padding-top: 20%;
          position: relative;
             h1{
-                font-size: calc(2vw + 25px);
+                font-size: calc(3vw + 25px);
                 .play-fair;
-                font-weight: 700;
+                font-weight: 400;
                 color: @text-color;
                 margin-bottom: 20px;
             }
@@ -238,10 +238,10 @@ body{
         color: #999;
 }
         h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
+            //letter-spacing: 5px;
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
@@ -251,76 +251,6 @@ body{
             .quicksand;
             color: @light-text;
         }
-}
-
-    /*SERVICES*/
-    .service {
-	padding: 22px;
-    box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
-    width: 100%;
-        border-bottom: 2px solid @blue-color;
-        margin-bottom: 40px;
-    i{
-        color: @blue-color;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    h3{
-        .quicksand;
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-    .service2 {
-	padding: 22px;
-    box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
-    width: 100%;
-        margin-bottom: 40px;
-        border-bottom: 2px solid @red-color;
-    i{
-        color: @red-color;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    h3{
-        .quicksand;
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-    .service3 {
-	padding: 22px;
-    box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
-    width: 100%;
-        margin-bottom: 40px;
-        border-bottom: 2px solid @orange-color;
-    i{
-        color: @orange-color;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    h3{
-        .quicksand;
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-    .service4 {
-	padding: 22px;
-    box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
-    width: 100%;
-        margin-bottom: 40px;
-        border-bottom: 2px solid @fiolet-color;
-    i{
-        color: @fiolet-color;
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-    h3{
-        .quicksand;
-        font-size: 16px;
-        font-weight: 500;
-    }
 }
 
     /*SUCCES-PROJECT*/
@@ -357,10 +287,9 @@ body{
 	        color: #999;
 }
         h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 90px;
             color: @text-color;
@@ -393,7 +322,11 @@ body{
             font-size: 35px;
             padding-top: 5px;
             padding-bottom: 5px;
-            color: #fff;
+            color: @text-color;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         span{
             position: absolute;
@@ -402,112 +335,32 @@ body{
             left: 0;
             right: 0;
             width: 100px;
-            top: -20px;
+            height: 100px;
+            top: -50px;
+            border-radius: 50%;
             background-color: red;
-            &::after{
-                position: absolute;
-                left: 0;
-                right: 0;
-                content: '';
-                bottom: -30px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 30px 50px 0;
-                border-color: #2c98f0 transparent transparent transparent;
-            }
-            &::before{
-                position: absolute;
-                left: 0;
-                right: 0;
-                content: '';
-                top: -30px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0 50px 30px;
-                border-color: transparent transparent #2c98f0 transparent;
-            }
+
         }
 }
     .block-1 {
-        border-bottom: 2px solid @blue-color;
         span{
-            background-color: @blue-color;
-            &::after{
-                border-color: @blue-color transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @blue-color transparent;
-            }
+            background-color: @sidebar-color;
         }
         
     }
     .block-2 {
-        border-bottom: 2px solid @red-color;
         span{
-            background-color: @red-color;
-            &::after{
-                border-color: @red-color transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @red-color transparent;
-            }
+            background-color: @sidebar-color;
         }
         
     }
     .block-3 {
-        border-bottom: 2px solid @orange-color;
         span{
-            background-color: @orange-color;
-            &::after{
-                border-color: @orange-color transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @orange-color transparent;
-            }
+            background-color: @sidebar-color;
         }
         
     }
-    .block-4 {
-        border-bottom: 2px solid @fiolet-color;
-        span{
-            background-color: @fiolet-color;
-            &::after{
-                border-color: @fiolet-color transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @fiolet-color transparent;
-            }
-        }
-        
-    }
-    .block-5 {
-        border-bottom: 2px solid @green-color;
-        span{
-            background-color: @green-color;
-            &::after{
-                border-color: @green-color transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @green-color transparent;
-            }
-        }
-        
-    }
-    .block-6 {
-        border-bottom: 2px solid @dark-blue;
-        span{
-            background-color: @dark-blue;
-            &::after{
-                border-color: @dark-blue transparent transparent transparent;
-            }
-            &::before{
-                border-color: transparent transparent @dark-blue transparent;
-            }
-        }
-        
-    }
+
 
     /*OVERLAY*/
     .overlay {
@@ -561,10 +414,9 @@ body{
         color: #999; 
 }
         h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
@@ -575,104 +427,62 @@ body{
             color: @light-text;
         }
 }
-    .progress-wrap {
-        margin-bottom: 20px;
-        h3{
-            font-size: 16px;
+    .skills {
+	    text-align: center;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 0 56px -8px rgba(0,0,0,.17);
+        padding: 10px;
+        margin-top: 10%;
+        img{
+            width: 50px;
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+        h4{
             .quicksand;
-            margin-bottom: 10px;
+            font-size: 22px;
+            font-weight: 600;
+            color: @text-color;
         }
-        .progress {
-            height: 6px;
-            overflow: visible;
-            box-shadow: none;
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                margin: 10px 0;
 
-            .progress-bar {
-                position: relative;
-                text-align: right;
-                overflow: visible;
-                border-radius: 8px;
-                box-shadow: none;
-                &::after{
-                    content: '';
-                    position: absolute;
-                    width: 10px;
-                    height: 10px;
-                    right: 0;
-                    top: -2px;
-                    border-radius: 50%;
-                    background-color: @blue-color;
-                }
-
-                span {
-                    position: absolute;
-                    top: -22px;
-                    right: 0;
-                    color: @text-color;
-                    font-size: 12px;
-                    .quicksand;
-                    font-weight: 700;
-                }
-            }
-            .color-1{
-                background-color: @blue-color;
-                &::after{
-                    background-color: @blue-color;
-                }
                 span{
-                    color: @blue-color;
-                }
-            }
-            .color-2{
-                background-color: @red-color;
-                &::after{
-                    background-color: @red-color;
-                }
-                span{
-                    color: @red-color;
-                }
-            }
-            .color-3{
-                background-color: @orange-color;
-                &::after{
-                    background-color: @orange-color;
-                }
-                span{
-                    color: @orange-color;
-                }
-            }
-            .color-4{
-                background-color: @fiolet-color;
-                &::after{
-                    background-color: @fiolet-color;
-                }
-                span{
-                    color: @fiolet-color;
-                }
-            }
-            .color-5{
-                background-color: @green-color;
-                &::after{
-                    background-color: @green-color;
-                }
-                span{
-                    color: @green-color;
-                }
-            }
-            .color-6{
-                background-color: @dark-blue;
-                &::after{
-                    background-color: @dark-blue;
-                }
-                span{
-                    color: @dark-blue;
+                   .quicksand;
+                    color: @light-text;
+                    cursor: pointer;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        left: 0;
+                        bottom: -3px;
+                        background-color: @green-color;
+                        visibility: hidden;
+                        -webkit-transform: scaleX(0);
+                        transform: scaleX(0);
+                        -webkit-transition: all 0.3s ease-in-out 0s;
+                        transition: all 0.3s ease-in-out 0s;
+                    }
+                    &:hover{
+                        &::after{
+                            visibility: visible;
+                            -webkit-transform: scaleX(1);
+                            transform: scaleX(1);
+                        }
+                    }
                 }
             }
         }
-        
-        
 }
-
     /*EDUCATION*/
     .education {
         padding-top: 15%;
@@ -685,10 +495,9 @@ body{
         }
 
         h2 {
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
@@ -746,10 +555,9 @@ body{
 
 }
         h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
@@ -827,15 +635,6 @@ body{
         .color-2{
             background-color: @red-color;
         }
-        .color-3{
-            background-color: @orange-color;
-        }
-        .color-4{
-            background-color: @fiolet-color;
-        }
-        .color-5{
-            background-color: @green-color;
-        }
         .color-6{
             background-color: transparent;
             width: 20px;
@@ -864,10 +663,9 @@ body{
 
 }
 	    h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 80px;
             color: @text-color;
@@ -988,10 +786,9 @@ body{
 	       color: #999;
 }
         h2{
-            font-size: 18px;
+            font-size: 28px;
             .play-fair;
-            font-weight: 700;
-            letter-spacing: 5px;
+            font-weight: 400;
             text-transform: uppercase;
             margin-bottom: 80px;
             color: @text-color;

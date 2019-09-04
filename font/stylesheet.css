@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('PlayfairDisplay-Regular.woff') format('woff');
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Quicksand';
@@ -11,4 +5,16 @@
         url('Quicksand-Regular.woff') format('woff');
     font-style: normal;
 }
+@font-face {
+    font-family: 'Minimal';
+    src: url('Minimal.woff2') format('woff2'),
+        url('Minimal.woff') format('woff'),
+        url('Minimal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
 
