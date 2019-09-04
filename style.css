@@ -22,7 +22,6 @@ body {
   float: right;
   clear: both;
   width: calc(-200%);
-  overflow: auto;
 }
 .colorlib-main .colorlib {
   padding: 0 2.5em;
@@ -103,8 +102,6 @@ body {
 .side-bar ul li a:hover::after {
   width: 100%;
 }
-/***RIGHT-CONTENT***/
-/*SLIDER*/
 .sidebar-menu-btn {
   display: none;
   position: fixed;
@@ -157,6 +154,7 @@ body {
 .sidebar-menu-btn .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
+/***RIGHT-CONTENT***/
 /*SLIDER*/
 .slider-item {
   background-image: url(img/img_bg_1.jpg);
@@ -255,6 +253,15 @@ body {
   font-family: 'Quicksand';
   font-style: normal;
   font-size: 15px;
+  position: relative;
+  transition: 0.5s;
+  background-color: #f9bf3f;
+  transition: box-shadow 1s ease, color 1s ease;
+}
+.succes-project .right:hover {
+  box-shadow: inset 6em 0 #000000;
+  color: #fff;
+  text-decoration: none;
 }
 /*WHAT-I-DO*/
 .what-i {

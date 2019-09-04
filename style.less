@@ -37,7 +37,6 @@ body{
 	float: right;
     clear: both;
     width: calc(100% - 300px);
-    overflow: auto;
     .colorlib {
 	padding: 0 2.5em;
 }
@@ -118,9 +117,6 @@ body{
         }
     }
 }
-
-/***RIGHT-CONTENT***/
-    /*SLIDER*/
 .sidebar-menu-btn {
     display: none;
     position: fixed;
@@ -180,6 +176,7 @@ body{
         stroke-dashoffset: -138px;
     }
 }
+/***RIGHT-CONTENT***/
     /*SLIDER*/
     .slider-item {
 	background-image: url(img/img_bg_1.jpg);
@@ -273,6 +270,16 @@ body{
             margin-top: 20px;
             .quicksand;
             font-size: 15px;
+            position: relative;
+            transition: 0.5s;
+            background-color: @orange-color;
+            transition: box-shadow 1s ease, color 1s ease;
+        }
+
+        .right:hover {
+            box-shadow: inset 6em 0 @text-color;
+            color: #fff;
+            text-decoration: none;
         }
 }
 
