@@ -196,6 +196,10 @@ body {
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
 }
+.my-col {
+  margin: 0;
+  padding: 0;
+}
 /*ABOUT-US*/
 .about-us {
   padding-top: 20%;
@@ -816,8 +820,7 @@ form .send {
 /*MEDIA*/
 @media (max-width: 575.98px) {
   .slider-item-info {
-    height: 75vh;
-    padding-top: 150px;
+    padding-top: 200px;
   }
 }
 @media (max-width: 991.98px) {
