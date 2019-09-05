@@ -8,12 +8,12 @@ body{
 @import url(font/stylesheet.css);
 
 .play-fair{
-   font-family: 'Minimal';
+   font-family: 'Heathergreen';
     font-style: normal;
 }
 
 .quicksand{
-    font-family: 'Quicksand';
+    font-family: 'Biko';
     font-style: normal;
 }
 
@@ -21,17 +21,17 @@ body{
 @sidebar-color: #f2f3f7;
 @light-text: rgba(0,0,0,.7);
 @text-color: #000000;
-@orange-color: #f9bf3f;
-@blue-color: #2c98f0;
-@red-color: #ec5453;
-@fiolet-color: #a84cb8;
-@green-color: #2fa499;
-@dark-blue: #4054b2;
+@green-color: #63cdda;
 @grey-color: #f2f3f7;
 
 /***GENERAL***/
 .home-section {
 	position: relative;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.row{
+    margin: 0;
 }
 .colorlib-main {
 	float: right;
@@ -68,18 +68,19 @@ body{
         display: block;
         .play-fair;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 40px;
         color: @text-color;
         text-decoration: none;
         cursor: default; 
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
     p{
         .quicksand;
         text-transform: uppercase;
         font-size: 12px;
-        a{
-            text-decoration: none;
-        }
+        color: @green-color;
+        margin: 0;
     }
     .copyright {
 	    text-transform: capitalize;
@@ -88,8 +89,9 @@ body{
     ul{
         list-style: none;
         padding: 0;
+        margin: 20px 0;
         li{
-            padding: 8px 0;
+            padding: 6px 0;
             a{
                 color: @light-text;
                 .quicksand;
@@ -102,7 +104,7 @@ body{
                     position: absolute;
                     width: 0%;
                     height: 2px;
-                    background-color: @blue-color;
+                    background-color: @green-color;
                     bottom: -2px;
                     left: 0;
                     right: 0;
@@ -210,19 +212,6 @@ body{
                 .quicksand;
                 color: @light-text;
             }
-            a{
-                display: inline-block;
-                .quicksand;
-                font-size: 12px;
-                text-transform: uppercase;
-                color: @text-color;
-                font-weight: 400;
-                border: 1px solid @text-color;
-                background: 0 0!important;
-                border-radius: 2px;
-                padding: 10px 10px;
-                text-decoration: none;
-            }
 }
 
     /*ABOUT-US*/
@@ -239,7 +228,7 @@ body{
             font-size: 28px;
             .play-fair;
             font-weight: 400;
-            //letter-spacing: 5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
@@ -253,7 +242,7 @@ body{
 
     /*SUCCES-PROJECT*/
     .succes-project {
-	    background-color: @orange-color;
+	    background-color: @sidebar-color;
         padding: 30px;
         h2{
             font-size: calc(1.5vw + 10px);
@@ -273,12 +262,12 @@ body{
             font-size: 15px;
             position: relative;
             transition: 0.5s;
-            background-color: @orange-color;
+            background-color: @sidebar-color;
             transition: box-shadow 1s ease, color 1s ease;
         }
 
         .right:hover {
-            box-shadow: inset 6em 0 @text-color;
+            box-shadow: inset 6em 0 @green-color;
             color: #fff;
             text-decoration: none;
         }
@@ -298,6 +287,7 @@ body{
             font-size: 28px;
             .play-fair;
             font-weight: 400;
+            letter-spacing: 2px;
             text-transform: uppercase;
             margin-bottom: 90px;
             color: @text-color;
@@ -330,7 +320,7 @@ body{
             font-size: 35px;
             padding-top: 5px;
             padding-bottom: 5px;
-            color: @text-color;
+            color: #fff;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -346,28 +336,11 @@ body{
             height: 100px;
             top: -50px;
             border-radius: 50%;
-            background-color: red;
+            background-color: @green-color;
 
         }
 }
-    .block-1 {
-        span{
-            background-color: @sidebar-color;
-        }
-        
-    }
-    .block-2 {
-        span{
-            background-color: @sidebar-color;
-        }
-        
-    }
-    .block-3 {
-        span{
-            background-color: @sidebar-color;
-        }
-        
-    }
+
 
 
     /*OVERLAY*/
@@ -428,6 +401,7 @@ body{
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
+            letter-spacing: 2px;
         }
         p{
             font-size: 15px;
@@ -491,6 +465,7 @@ body{
             }
         }
 }
+
     /*EDUCATION*/
     .education {
         padding-top: 15%;
@@ -509,6 +484,7 @@ body{
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
+            letter-spacing: 2px;
         }
     }
     .card{
@@ -569,6 +545,7 @@ body{
             text-transform: uppercase;
             margin-bottom: 60px;
             color: @text-color;
+            letter-spacing: 2px;
         }  
 }
     .time-line-section {
@@ -588,7 +565,7 @@ body{
                 .time-line-icon {
                     width: 40px;
                     height: 40px;
-                    background-color: @blue-color;
+                    background-color: @green-color;
                     border-radius: 50%;
                     position: relative;
                     box-shadow: 0 0 0 5px #f2f3f7;
@@ -638,10 +615,8 @@ body{
                     }
 }
         .color-1{
-            background-color: @blue-color;
         }
         .color-2{
-            background-color: @red-color;
         }
         .color-6{
             background-color: transparent;
@@ -677,6 +652,7 @@ body{
             text-transform: uppercase;
             margin-bottom: 80px;
             color: @text-color;
+            letter-spacing: 2px;
         }
 }
     .buttons-group {
@@ -698,7 +674,7 @@ body{
                     cursor: pointer;
                     transition: 0.5s;
                     &:hover{
-                        color: @blue-color;
+                        color: @green-color;
                     }
                 }
             }
@@ -732,7 +708,7 @@ body{
             height: 100%;
             max-height: 300px;
             width: 100%;
-            background-color: @blue-color;
+            background-color: @green-color;
             opacity: 0;
             transition: 0.5s;
             a{
@@ -771,7 +747,7 @@ body{
 }
     .more-info{
         button{
-            background-color: @blue-color;
+            background-color: @green-color;
             width: 100%;
             color: #fff;
             border: none;
@@ -800,6 +776,7 @@ body{
             text-transform: uppercase;
             margin-bottom: 80px;
             color: @text-color;
+            letter-spacing: 2px;
         }
 }
     form {
@@ -826,7 +803,7 @@ body{
             resize: none;
         }
         .send{
-            background-color: @blue-color;
+            background-color: @green-color;
             color: #fff;
             font-size: 12px;
             text-transform: uppercase;
@@ -858,11 +835,12 @@ body{
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
 
-    .slider{
-        .slider-item-info {
-	    height: 75vh;
+.slider-item-info {
+    height: 75vh;
+    padding-top: 150px;
+
 }
-    }
+
 }
 
 // Small devices (landscape phones, less than 768px)

@@ -1,18 +1,22 @@
 
 @font-face {
-    font-family: 'Quicksand';
-    src: url('Quicksand-Regular.woff2') format('woff2'),
-        url('Quicksand-Regular.woff') format('woff');
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Minimal';
-    src: url('Minimal.woff2') format('woff2'),
-        url('Minimal.woff') format('woff'),
-        url('Minimal.ttf') format('truetype');
+    font-family: 'Biko';
+    src: url('Biko.woff2') format('woff2'),
+        url('Biko.woff') format('woff'),
+        url('Biko.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Heathergreen';
+    src: url('Heathergreen.woff2') format('woff2'),
+        url('Heathergreen.woff') format('woff'),
+        url('Heathergreen.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 
 

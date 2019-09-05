@@ -6,17 +6,22 @@ body {
 }
 /***FONTS***/
 .play-fair {
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
 }
 .quicksand {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
 }
 /***COLORS***/
 /***GENERAL***/
 .home-section {
   position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.row {
+  margin: 0;
 }
 .colorlib-main {
   float: right;
@@ -51,22 +56,23 @@ body {
 }
 .side-bar .name {
   display: block;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 40px;
   color: #000000;
   text-decoration: none;
   cursor: default;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 .side-bar p {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   text-transform: uppercase;
   font-size: 12px;
-}
-.side-bar p a {
-  text-decoration: none;
+  color: #63cdda;
+  margin: 0;
 }
 .side-bar .copyright {
   text-transform: capitalize;
@@ -75,13 +81,14 @@ body {
 .side-bar ul {
   list-style: none;
   padding: 0;
+  margin: 20px 0;
 }
 .side-bar ul li {
-  padding: 8px 0;
+  padding: 6px 0;
 }
 .side-bar ul li a {
   color: rgba(0, 0, 0, 0.7);
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: 12px;
   text-decoration: none;
@@ -93,7 +100,7 @@ body {
   position: absolute;
   width: 0%;
   height: 2px;
-  background-color: #2c98f0;
+  background-color: #63cdda;
   bottom: -2px;
   left: 0;
   right: 0;
@@ -177,7 +184,7 @@ body {
 }
 .slider-item-info h1 {
   font-size: calc(28vw);
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -185,23 +192,9 @@ body {
 }
 .slider-item-info p {
   font-size: 18px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
-}
-.slider-item-info a {
-  display: inline-block;
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: 400;
-  border: 1px solid #000000;
-  background: 0 0!important;
-  border-radius: 2px;
-  padding: 10px 10px;
-  text-decoration: none;
 }
 /*ABOUT-US*/
 .about-us {
@@ -210,34 +203,35 @@ body {
 .about-us .about-us-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .about-us h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #000000;
 }
 .about-us p {
   font-size: 15px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
 }
 /*SUCCES-PROJECT*/
 .succes-project {
-  background-color: #f9bf3f;
+  background-color: #f2f3f7;
   padding: 30px;
 }
 .succes-project h2 {
   font-size: calc(11.5vw);
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   line-height: 1.5;
   color: #000000;
@@ -250,16 +244,16 @@ body {
   border: 1px solid #000000;
   color: #000000;
   margin-top: 20px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: 15px;
   position: relative;
   transition: 0.5s;
-  background-color: #f9bf3f;
+  background-color: #f2f3f7;
   transition: box-shadow 1s ease, color 1s ease;
 }
 .succes-project .right:hover {
-  box-shadow: inset 6em 0 #000000;
+  box-shadow: inset 6em 0 #63cdda;
   color: #fff;
   text-decoration: none;
 }
@@ -270,16 +264,17 @@ body {
 .what-i .what-i-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .what-i h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 90px;
   color: #000000;
@@ -297,14 +292,14 @@ body {
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: #000000;
   margin-top: 60px;
 }
 .expert-service p {
   font-size: 15px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
@@ -313,7 +308,7 @@ body {
   font-size: 35px;
   padding-top: 5px;
   padding-bottom: 5px;
-  color: #000000;
+  color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -329,16 +324,7 @@ body {
   height: 100px;
   top: -50px;
   border-radius: 50%;
-  background-color: red;
-}
-.block-1 span {
-  background-color: #f2f3f7;
-}
-.block-2 span {
-  background-color: #f2f3f7;
-}
-.block-3 span {
-  background-color: #f2f3f7;
+  background-color: #63cdda;
 }
 /*OVERLAY*/
 .overlay {
@@ -360,7 +346,7 @@ body {
 }
 .overlay .over-numb {
   font-size: 40px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   display: block;
   font-weight: 700;
@@ -372,7 +358,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 5px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   display: block;
   margin-bottom: 30px;
@@ -388,23 +374,24 @@ body {
 .my-skills .my-specialty-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .my-skills h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #000000;
+  letter-spacing: 2px;
 }
 .my-skills p {
   font-size: 15px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -423,7 +410,7 @@ body {
   margin-top: 20px;
 }
 .skills h4 {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: 22px;
   font-weight: 600;
@@ -438,7 +425,7 @@ body {
   margin: 10px 0;
 }
 .skills ul li span {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
   cursor: pointer;
@@ -451,7 +438,7 @@ body {
   height: 1px;
   left: 0;
   bottom: -3px;
-  background-color: #2fa499;
+  background-color: #63cdda;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -470,19 +457,20 @@ body {
 .education .educ-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .education h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #000000;
+  letter-spacing: 2px;
 }
 .card {
   border-radius: none;
@@ -493,7 +481,7 @@ body {
 }
 .card .card-header h5 .btn {
   color: #333 !important;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: 14px !important;
   letter-spacing: 1px !important;
@@ -516,7 +504,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card .card-body p {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
@@ -529,19 +517,20 @@ body {
 .experience .exp-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .experience h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #000000;
+  letter-spacing: 2px;
 }
 .time-line-section {
   position: relative;
@@ -562,7 +551,7 @@ body {
 .time-line-section .timeline-item .time-line-icon {
   width: 40px;
   height: 40px;
-  background-color: #2c98f0;
+  background-color: #63cdda;
   border-radius: 50%;
   position: relative;
   box-shadow: 0 0 0 5px #f2f3f7;
@@ -594,7 +583,7 @@ body {
 }
 .time-line-section .timeline-item .time-line-info h2 {
   font-size: calc(11vw);
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: #000000;
   font-weight: 500;
@@ -609,15 +598,9 @@ body {
 }
 .time-line-section .timeline-item .time-line-info p {
   font-size: 15px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
-}
-.time-line-section .timeline-item .color-1 {
-  background-color: #2c98f0;
-}
-.time-line-section .timeline-item .color-2 {
-  background-color: #ec5453;
 }
 .time-line-section .timeline-item .color-6 {
   background-color: transparent;
@@ -638,19 +621,20 @@ body {
 .my-work .work-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .my-work h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 80px;
   color: #000000;
+  letter-spacing: 2px;
 }
 .buttons-group {
   list-style: none;
@@ -667,7 +651,7 @@ body {
 }
 .buttons-group li span {
   font-size: 15px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -675,7 +659,7 @@ body {
   transition: 0.5s;
 }
 .buttons-group li span:hover {
-  color: #2c98f0;
+  color: #63cdda;
 }
 .work-project {
   position: relative;
@@ -704,12 +688,12 @@ body {
   height: 100%;
   max-height: 300px;
   width: 100%;
-  background-color: #2c98f0;
+  background-color: #63cdda;
   opacity: 0;
   transition: 0.5s;
 }
 .work-project .work-project-info a {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: 16px;
   color: #fff;
@@ -720,7 +704,7 @@ body {
   margin-bottom: 20px;
 }
 .work-project .work-project-info p {
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -743,12 +727,12 @@ body {
   transform: translate(-50%, -50%);
 }
 .more-info button {
-  background-color: #2c98f0;
+  background-color: #63cdda;
   width: 100%;
   color: #fff;
   border: none;
   padding: 15px 0;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   text-transform: uppercase;
   font-size: 12px;
@@ -761,19 +745,20 @@ body {
 .contact .contact-txt {
   font-size: 10px;
   text-transform: uppercase;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   letter-spacing: 5px;
   color: #999;
 }
 .contact h2 {
   font-size: 28px;
-  font-family: 'Minimal';
+  font-family: 'Heathergreen';
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 80px;
   color: #000000;
+  letter-spacing: 2px;
 }
 form {
   width: 100%;
@@ -786,7 +771,7 @@ form input {
   border: none;
   background-color: #f2f3f7;
   margin-bottom: 10px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
 }
 form textarea {
@@ -796,12 +781,12 @@ form textarea {
   border: none;
   background-color: #f2f3f7;
   margin-bottom: 10px;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   resize: none;
 }
 form .send {
-  background-color: #2c98f0;
+  background-color: #63cdda;
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
@@ -821,7 +806,7 @@ form .send {
 .contacts-data li a {
   color: #000000;
   text-decoration: none;
-  font-family: 'Quicksand';
+  font-family: 'Biko';
   font-style: normal;
   font-size: calc(10.5vw);
 }
@@ -830,8 +815,9 @@ form .send {
 }
 /*MEDIA*/
 @media (max-width: 575.98px) {
-  .slider .slider-item-info {
+  .slider-item-info {
     height: 75vh;
+    padding-top: 150px;
   }
 }
 @media (max-width: 991.98px) {
