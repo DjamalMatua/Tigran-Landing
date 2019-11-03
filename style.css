@@ -4,6 +4,11 @@ body {
   padding: 0;
   margin: 0;
 }
+input,
+button,
+textarea:focus {
+  outline: none;
+}
 /***FONTS***/
 .play-fair {
   font-family: 'Heathergreen';
@@ -495,43 +500,55 @@ body {
   color: #000000;
   letter-spacing: 2px;
 }
-.card {
+.acc-group {
   border-radius: none;
 }
-.card .card-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  margin-bottom: 1px !important;
-}
-.card .card-header h5 .btn {
-  color: #333 !important;
+.acc-group .accordion {
+  background-color: #f2f3f7;
+  color: #000000;
+  text-transform: uppercase;
   font-family: 'Biko';
   font-style: normal;
-  font-size: 14px !important;
-  letter-spacing: 1px !important;
-  text-transform: uppercase !important;
-  font-weight: 500 !important;
-  text-decoration: none;
-  position: relative;
+  line-height: 20px;
+  cursor: pointer;
+  padding: 16px;
   width: 100%;
+  border: none;
   text-align: left;
+  outline: none;
+  font-size: 14px;
+  transition: 0.5s;
 }
-.card .card-header h5 .btn::after {
-  position: absolute;
-  content: '+';
-  right: 0;
-  top: 50%;
-  font-size: 20px;
-  transform: translateY(-50%);
-}
-.card .card-body {
+.acc-group .card-body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0 15px;
+  color: #212121;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
-.card .card-body p {
+.acc-group .card-body p {
   font-family: 'Biko';
   font-style: normal;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
   font-size: 15px;
+}
+.acc-group .active,
+.acc-group .accordion:hover {
+  background-color: #607D8B;
+}
+.acc-group .accordion:after {
+  content: '\002B';
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.acc-group .active:after {
+  content: "\2212";
 }
 /*EXPERIENCE*/
 .experience {
@@ -659,6 +676,9 @@ body {
   color: #000000;
   letter-spacing: 2px;
 }
+.load-more {
+  display: none;
+}
 .buttons-group {
   list-style: none;
   padding: 0;
@@ -694,7 +714,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden!important;
+  overflow: hidden !important;
 }
 .work-project:hover .work-project-info {
   opacity: 1;
@@ -703,51 +723,6 @@ body {
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
-}
-.work-project .work-project-info {
-  position: absolute;
-  top: 0;
-  padding: 20px;
-  height: 100%;
-  max-height: 300px;
-  width: 100%;
-  background-color: #63cdda;
-  opacity: 0;
-  transition: 0.5s;
-}
-.work-project .work-project-info a {
-  font-family: 'Biko';
-  font-style: normal;
-  font-size: 16px;
-  color: #fff;
-  font-weight: 800;
-  text-decoration: none;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 20px;
-}
-.work-project .work-project-info p {
-  font-family: 'Biko';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.7);
-}
-.work-project .work-project-info .share {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  color: #000000;
-  position: relative;
-  display: block;
-  margin-top: 30%;
-}
-.work-project .work-project-info .share i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .more-info button {
   background-color: #63cdda;

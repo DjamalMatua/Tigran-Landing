@@ -31,9 +31,31 @@ $('.over-numb').each(function () {
     });
 });
 
+//LOADMORE
+$(document).ready(function(){
+    $(".load-more").slice(0, 2).show();
+    $("#loadMore").on('click', function(e){
+        e.preventDefault();
+        $(".load-more:hidden").slice(0, 2).slideDown();
+    });
+    $('#all').click(function () {
+    });
+});
+//ACCORDION
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-
-
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
 
 
 
