@@ -32,13 +32,22 @@ $('.over-numb').each(function () {
 });
 
 //LOADMORE
-$(document).ready(function(){
+$(document).ready(function () {
     $(".load-more").slice(0, 2).show();
-    $("#loadMore").on('click', function(e){
+    $('.mixbtns li').click(function () {
+        let more_btn = $(".more-info").closest('.col-md-12').find('button');
+        if ($(".mixbtns li:first-child").hasClass("mixitup-control-active")) {
+            //let add_slide = $(".mix").closest('.mymixcount').find('.all');
+            $(".load-more").slice(0, 2).show();
+        } else {
+            $(".mix").removeClass("load-more");
+            more_btn.css("display", "none");
+        }
+    });
+    $(".load-more").slice(0, 2).show();
+    $("#loadMore").on('click', function (e) {
         e.preventDefault();
         $(".load-more:hidden").slice(0, 2).slideDown();
-    });
-    $('#all').click(function () {
     });
 });
 //ACCORDION
