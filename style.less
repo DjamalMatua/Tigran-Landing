@@ -60,6 +60,7 @@ input, button, textarea:focus{
         width: 150px;
         height: 150px;
         background-size: cover;
+        background-position: center;
         border-radius: 50%;
         display: block;
         margin: 0 auto;
@@ -221,13 +222,13 @@ input, button, textarea:focus{
 
     /*ABOUT-US*/
     .about-us {
-        padding-top: 20%;
+        padding-top: 10%;
 	.about-us-txt {
 	    font-size: 10px;
         text-transform: uppercase;
         .quicksand;
         letter-spacing: 5px;
-        color: @green-color;
+        color: #999;
 }
         h2{
             font-size: 28px;
@@ -280,7 +281,7 @@ input, button, textarea:focus{
 
     /*WHAT-I-DO*/
     .what-i {
-        padding-top: 20%;
+        padding-top: 10%;
 	    .what-i-txt {
 	        font-size: 10px;
 	        text-transform: uppercase;
@@ -306,14 +307,14 @@ input, button, textarea:focus{
         padding: 22px;
         position: relative;
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         h3{
             font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
             .quicksand;
             color: @text-color;
-            margin-top: 60px;
+            margin-top: 30px;
         }
         p{
             font-size: 15px;
@@ -321,28 +322,14 @@ input, button, textarea:focus{
             font-weight: 400;
             color: @light-text;
         }
-        i{
-            font-size: 35px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            color: #fff;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        span{
-            position: absolute;
-            display: block;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-            width: 100px;
-            height: 100px;
-            top: -50px;
-            border-radius: 50%;
+        .hr{
+            width: 70px;
+            height: 2px;
             background-color: @green-color;
-
+            text-align: center;
+            border: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 }
 
@@ -357,6 +344,7 @@ input, button, textarea:focus{
         height: 100%;
         text-align: center;
         position: relative;
+        margin-top: 30px;
         .fill {
 	        position: absolute;
             width: 100%;
@@ -389,7 +377,7 @@ input, button, textarea:focus{
 
     /*MY-SKILLS*/
     .my-skills {
-        padding-top: 20%;
+        padding-top: 10%;
 	.my-specialty-txt {
 	   font-size: 10px;
         text-transform: uppercase;
@@ -421,9 +409,9 @@ input, button, textarea:focus{
             bottom: 15px;
             left: 25px;
             width: 50%;
-            top: 80%;
+            top: 70%;
             max-width: 300px;
-            box-shadow: 0 15px 8px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 15px 8px rgba(0, 0, 0, 0.5);
             transform: rotate(-6deg);
             opacity: 0;
             transition: 0.4s;
@@ -453,42 +441,6 @@ input, button, textarea:focus{
             font-size: 22px;
             font-weight: 600;
             color: @text-color;
-        }
-        ul{
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            li{
-                margin: 10px 0;
-
-                span{
-                   .quicksand;
-                    color: @light-text;
-                    cursor: pointer;
-                    position: relative;
-                    &::after{
-                        position: absolute;
-                        content: '';
-                        width: 100%;
-                        height: 1px;
-                        left: 0;
-                        bottom: -3px;
-                        background-color: @green-color;
-                        visibility: hidden;
-                        -webkit-transform: scaleX(0);
-                        transform: scaleX(0);
-                        -webkit-transition: all 0.3s ease-in-out 0s;
-                        transition: all 0.3s ease-in-out 0s;
-                    }
-                    &:hover{
-                        &::after{
-                            visibility: visible;
-                            -webkit-transform: scaleX(1);
-                            transform: scaleX(1);
-                        }
-                    }
-                }
-            }
         }
 }
 
@@ -564,7 +516,7 @@ input, button, textarea:focus{
 
     /*EXPERIENCE*/
     .experience {
-        padding-top: 20%;
+        padding-top: 10%;
 
         .exp-txt {
             font-size: 10px;
@@ -686,7 +638,7 @@ input, button, textarea:focus{
 
     /*MY-WORK*/
     .my-work {
-        padding-top: 20%;
+        padding-top: 10%;
 
         .work-txt {
             font-size: 10px;
@@ -779,7 +731,7 @@ input, button, textarea:focus{
     }
     /*CONTACT*/
     .contact {
-        padding-top: 20%;
+        padding-top: 10%;
 	    .contact-txt {
 	        font-size: 10px;
 	       text-transform: uppercase;
